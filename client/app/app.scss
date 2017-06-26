@@ -25,3 +25,59 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 @import '../components/modal/modal';
 @import '../components/oauth-buttons/oauth-buttons';
 /* endinject */
+
+.borderless td, .borderless th, .borderless th {
+    border: 0px solid #ddd !important;
+}
+.tableStyle1 {
+	margin-bottom: 4px;
+}
+.tableStyle1>tbody>tr>td {
+	padding: 2px;
+}
+.panel-body.padding_2_10 {
+	padding: 2px 10px;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.badge:hover {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.badge-error {
+  background-color: #b94a48;
+}
+.badge-error:hover {
+  background-color: #953b39;
+}
+.badge-warning {
+  background-color: #f89406;
+}
+.badge-warning:hover {
+  background-color: #c67605;
+}
+.badge-success {
+  background-color: #468847;
+}
+.badge-success:hover {
+  background-color: #356635;
+}
+.badge-info {
+  background-color: #3a87ad;
+}
+.badge-info:hover {
+  background-color: #2d6987;
+}
+.badge-inverse {
+  background-color: #333333;
+}
+.badge-inverse:hover {
+  background-color: #1a1a1a;
+}
+.padding4px {
+	padding-left: 4px !important;
+    padding-right: 4px !important;
+}

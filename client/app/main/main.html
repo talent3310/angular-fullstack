@@ -3,29 +3,168 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Panel Heading</div>
-                    <div class="panel-body">Panel Content</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-7" >
+                                <input type="text" class="form-control" placeholder="아이디">
+                                <input type="password" class="form-control" placeholder="비밀번호">
+                                <div class="checkbox text-left">
+                                    <label>
+                                        <input type="checkbox" value="">아이디 저장</label>
+                                </div>
+                            </div>
+                            <div class="col-md-5" >
+                                <button type="button" class="btn btn-success" id="login-btn">로그인</button>
+                            </div>
+                        </div>
+                        <div class="form-inline">
+                            <a href="#">아이디 찾기 </a>
+                            <a href="#">비밀번호 찾기 </a>
+                            <a href="#">회원가입</a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success" id="gameStart-btn">게임시작</button>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="mainBorad-panel">Panel Content</div>
+                    <div class="panel-heading">
+                        <div>
+                            <div class="pull-left">
+                                <span class="label label-danger">Live</span> <span>서바이벌 하이로우</span>
+                            </div>
+                            <div class="text-right">
+                                <p>일시: <span>14.05.05 20:30~</span> <span>650명시</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
+<br>
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Features:</h1>
-            <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
-                <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body text-center">
+                    <p>게임전에 미리미리
+                        <br>충전하기</p>
+                    <button type="button" class="btn btn-primary">충전하기</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">방송예고</div>
+                <div class="panel-body padding_2_10">
+                    <table class="table borderless tableStyle1">
+                        <tbody>
+                            <tr>
+                                <td>논현동 최강 결정전</td>
+                                <td class="text-danger">14.05.0.3</td>
+                                <td class="text-danger">22:30</td>
+                            </tr>
+                            <tr>
+                                <td>상금 2000만원 서바이벌..</td>
+                                <td class="text-danger">14.05.10</td>
+                                <td class="text-danger">20:30</td>
+                            </tr>
+                            <tr>
+                                <td>5대 천왕 결정전</td>
+                                <td class="text-danger">14.05.15</td>
+                                <td class="text-danger">21:30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">최근 경기 결과 <span class="pull-right"><a href="#">기록 더 보기</a></span></div>
+                <div class="panel-body">
+                    <p>노현동 최강 결정전 <span class="pull-right text-danger"><span>14.05.06</span> &nbsp;<span>14.05.06</span></span>
+                    </p>
+                    <table class="table borderless tableStyle1">
+                        <tbody>
+                            <tr>
+                                <td class="text-primary">우승</td>
+                                <td>불광동 휘발유 빨리</td>
+                                <td>20전 10승 10패</td>
+                            </tr>
+                            <tr>
+                                <td class="text-primary">준우승</td>
+                                <td>형짐 100원만</td>
+                                <td>20전 10승 10패</td>
+                            </tr>
+                            <tr>
+                                <td class="text-primary">3위</td>
+                                <td>불리불리</td>
+                                <td>20전 10승 10패</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <p>마일리지
+                                <br>상품권 교환</p>
+                            <button type="button" class="btn btn-primary">교환하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <p>서비스 이용안내
+                                <br>DHC 가이드</p>
+                            <button type="button" class="btn btn-primary">교환하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <p>게임대회
+                                <br>참가자 모집</p>
+                            <button type="button" class="btn btn-primary">신정하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!--  <div>
+                        <div class="pull-left">공지</div>
+                        <div class="">오픈 기념 회원가입시 1000포인트 제공</div>
+                    </div> -->
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0" id="mainNotificationDiv">
+                        <div class="input-group-addon">공지</div>
+                        <p class="form-control">오픈 기념 회원가입시 1000포인트 제공</p>
+                        <!-- <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item panel-heading">선수랭킹 <span class="badge">12</span></li>
+                <li class="list-group-item"><span class="label label-default">1</span>&nbsp;&nbsp; <span>AAAAA</span> <span class="badge badge-error">5</span></li>
+                <li class="list-group-item"><span class="label label-default">2</span>&nbsp;&nbsp; <span>BBBBB</span> <span class="badge badge-error">3</span></li>
+                <li class="list-group-item"><span class="label label-default">3</span>&nbsp;&nbsp; <span>CCCCCC</span> <span class="badge badge-error">1</span></li>
+                <li class="list-group-item"><span class="label label-default">4</span>&nbsp;&nbsp; <span>DD</span> <span class="badge badge-error">4</span></li>
+                <li class="list-group-item"><span class="label label-default">5</span>&nbsp;&nbsp; <span>EEEE</span> <span class="badge badge-error">6</span></li>
             </ul>
         </div>
     </div>
-    <form class="thing-form">
-        <label>Syncs in realtime across clients</label>
-        <p class="input-group">
-            <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing">
-            <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
-      </span>
-        </p>
-    </form>
 </div>
