@@ -7,6 +7,9 @@ export class NavbarComponent {
   menu = [{
     title: 'Home',
     state: 'main'
+  },{
+    title: 'Guidance',
+    state: 'guidance'
   }];
   isLoggedIn: Function;
   isAdmin: Function;
@@ -23,7 +26,7 @@ export class NavbarComponent {
 
 }
 
-export default angular.module('directives.navbar', [])
+export default angular.module('wkMeanApp.navbar', [])
   .component('navbar', {
     template: require('./navbar.html'),
     controller: NavbarComponent

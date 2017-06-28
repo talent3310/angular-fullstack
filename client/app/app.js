@@ -22,6 +22,15 @@ import admin from './admin';
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
+import IntroduceComponent from './introduce/introduce.component';
+import GuidanceComponent from './guidance/guidance.component';
+import subNav from '../components/subNav/subNav.component';
+import answer from './guidance/answer/answer.component';
+
+
+
+
+
 import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
@@ -29,8 +38,8 @@ import socket from '../components/socket/socket.service';
 import './app.scss';
 
 angular.module('wkMeanApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-  uiBootstrap, _Auth, account, admin, 'validation.match', navbar, footer, main, constants,
-  socket, util
+  uiBootstrap, _Auth, account, admin, 'validation.match', navbar, footer, main, IntroduceComponent, GuidanceComponent, constants,
+  socket, util, subNav, answer
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
