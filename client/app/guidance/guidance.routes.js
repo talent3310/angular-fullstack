@@ -7,7 +7,7 @@ export default function($stateProvider) {
       url: '/guidance',
       template: '<guidance></guidance>',
       controller:function($scope, $state){
-            $state.go('guidance.answer');
+            // $state.go('guidance.answer');
         }    	
     })
     .state('guidance.answer', {
@@ -16,14 +16,14 @@ export default function($stateProvider) {
     })
     .state('guidance.notify', {
    	  url: '/notify',
-      template: '<guidance></guidance>'
+      template: '<notification></notification>'
     })
-    .state('guidance.findID', {
-   	  url: '/findID',
-      template: '<guidance></guidance>'
+    .state('guidance.findid', {
+   	  url: '/findid',
+      template: '<find-id></find-id>'
     })
     .state('guidance.findPassword', {
-   	  url: '/findPassword',
-      template: '<guidance></guidance>'
+   	  url: '/findpassword',
+      template: '<find-pass></find-pass>'
     });
 }

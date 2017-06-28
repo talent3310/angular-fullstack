@@ -26,9 +26,9 @@ import IntroduceComponent from './introduce/introduce.component';
 import GuidanceComponent from './guidance/guidance.component';
 import subNav from '../components/subNav/subNav.component';
 import answer from './guidance/answer/answer.component';
-
-
-
+import notification from './guidance/notification/notification.component';
+import findId from './guidance/findId/findId.component';
+import findPass from './guidance/findPass/findPass.component'
 
 
 import constants from './app.constants';
@@ -39,7 +39,7 @@ import './app.scss';
 
 angular.module('wkMeanApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
   uiBootstrap, _Auth, account, admin, 'validation.match', navbar, footer, main, IntroduceComponent, GuidanceComponent, constants,
-  socket, util, subNav, answer
+  socket, util, subNav, answer, notification, findId, findPass
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

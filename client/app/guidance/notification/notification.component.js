@@ -5,13 +5,13 @@ export class notificationComponent {
   /*@ngInject*/
   constructor() {
     this.message = 'World';
+    this.state = '1';
   }
 }
 
 export default angular.module('wkMeanApp.notification', [])
   .component('notification', {
-    template: '<h1>Hello {{ $ctrl.message }}</h1>',
-    bindings: { message: '<' },
+    template: require('./notification.html'),
     controller: notificationComponent
   })
   .name;

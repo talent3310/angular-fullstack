@@ -1,0 +1,28 @@
+<div class="row">
+    <div>
+        <h2>아이디 찾기</h2>
+    </div>
+    <div ng-if="$ctrl.state == 1">
+        <div class="panel panel-default">
+            <div class="panel-body text-center">
+                <p>dkseisey (가입 날짜: 2012.05)</p>
+                <div class="text-center">
+                    <button class="btn btn-primary" ng-click="$ctrl.state = 2" type="button">아이핀 인증하기</button>
+                    
+                </div>
+            </div>
+        </div>
+        <p>비밀번호를 모르시나요? <a href="#">비밀번호 찾기</a></p>
+    </div>
+    <div ng-if="$ctrl.state == 2">
+        <div class="panel panel-default">
+            <div class="panel-body text-center">
+                <p>dkseisey (가입 날짜: 2012.05)</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary"  type="button">로그인</button>
+            <button class="btn btn-primary"  type="button">비밀번호 찾기</button>
+        </div>
+    </div>
+</div>
