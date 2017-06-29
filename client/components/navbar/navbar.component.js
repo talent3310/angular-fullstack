@@ -10,7 +10,13 @@ export class NavbarComponent {
   },{
     title: 'Guidance',
     state: 'guidance'
-  }];
+  },
+  {
+    title: '게임소개',
+    state: 'introduce'
+  }
+  ];
+
   isLoggedIn: Function;
   isAdmin: Function;
   getCurrentUser: Function;

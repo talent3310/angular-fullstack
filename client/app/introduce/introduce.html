@@ -1,1 +1,16 @@
-<div>This is the introduce view.</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group text-center">
+                <a ui-sref-active="active" ui-sref="introduce.info" class="list-group-item">게임정보</a>
+                <a ui-sref-active="active" ui-sref="introduce.screen" class="list-group-item">게임화면</a>
+                <a ui-sref-active="active" ui-sref="introduce.words" class="list-group-item">게임용어</a>
+                <a ui-sref-active="active" ui-sref="introduce.rule" class="list-group-item">게임규칙</a>
+                <a ui-sref-active="active" ui-sref="introduce.guid" class="list-group-item">대회안내</a>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div ui-view></div> 
+        </div>
+    </div>
+</div>
