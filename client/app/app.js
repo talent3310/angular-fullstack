@@ -38,6 +38,18 @@ import contestDetail from './record/contestDetail/contestDetail.component';
 import ChargeComponent from './charge/charge.component';
 import dpoint from './charge/dpoint/dpoint.component';
 import mileChange from './charge/mileChange/mileChange.component';
+import MyAccountComponent from './myAccount/myAccount.component';
+
+import bettingResult from './myAccount/bettingResult/bettingResult.component';
+import changePass from './myAccount/changePass/changePass.component';
+import leave from './myAccount/leave/leave.component';
+import myDpoint from './myAccount/myDpoint/myDpoint.component';
+import myInfo from './myAccount/myInfo/myInfo.component';
+import myMile from './myAccount/myMile/myMile.component';
+
+
+
+
 
 import constants from './app.constants';
 import util from '../components/util/util.module';
@@ -47,7 +59,8 @@ import './app.scss';
 
 angular.module('wkMeanApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
   uiBootstrap, _Auth, 'smart-table', account, admin, 'validation.match', navbar, footer, main, IntroduceComponent, GuidanceComponent, constants,
-  socket, util, subNav, answer, notification, findId, findPass, introduce, RecordComponent, result, playerResult, ChargeComponent, dpoint, mileChange
+  socket, util, subNav, answer, notification, findId, findPass, introduce, RecordComponent, result, playerResult, ChargeComponent, dpoint, mileChange,
+  MyAccountComponent,bettingResult, changePass, leave, myDpoint, myInfo, myMile
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

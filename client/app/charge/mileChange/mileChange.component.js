@@ -10,7 +10,7 @@ export class mileChangeComponent {
 
 export default angular.module('angularFullstackApp.mileChange', [])
   .component('mileChange', {
-    template: '<h1>Hello {{ $ctrl.message }}</h1>',
+    template: require('./mileChange.html'),
     controller: mileChangeComponent
   })
   .name;

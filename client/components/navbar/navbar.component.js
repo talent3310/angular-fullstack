@@ -21,6 +21,9 @@ export class NavbarComponent {
   ,{
     title: '충전소',
     state: 'charge'
+  },{
+    title: '내정보',
+    state: 'myAccount'
   }];
 
   isLoggedIn: Function;
