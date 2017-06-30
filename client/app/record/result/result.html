@@ -1,0 +1,212 @@
+<div class="row">
+    <div ng-if="$ctrl.state == 1">
+        <div>
+            <h4>대회결과</h4>
+            <p>방송을 클릭하시면 상세한 게임기록을 확인할수 있습니다.</p>
+        </div>
+        <br>
+        <div class="text-center">
+            <form class="form-inline">
+                <button class="btn btn-primary glyphicon glyphicon-chevron-left"></button>
+                <select class="form-control" ng-model="$ctrl.year" ng-options="opt for opt in $ctrl.options.years"></select>-
+                <select class="form-control" ng-model="$ctrl.month" ng-options="opt for opt in $ctrl.options.months"></select>
+                <button class="btn btn-primary glyphicon glyphicon-chevron-right"></button>
+            </form>
+        </div>
+        <br>
+        <div class="col-md-6" ng-click=" $ctrl.state = 2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <p>논현동 최강 결정전</p>
+                    </div>
+                    <div class="pull-right">14.05.27</div>
+                    <br>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>우승 AAAAAAA</p>
+                        <p>준우승 BBBBBB</p>
+                        <p>3위 CCCCCCC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" ng-click=" $ctrl.state = 2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <p>논현동 최강 결정전</p>
+                    </div>
+                    <div class="pull-right">14.05.27</div>
+                    <br>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>우승 AAAAAAA</p>
+                        <p>준우승 BBBBBB</p>
+                        <p>3위 CCCCCCC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" ng-click=" $ctrl.state = 2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <p>논현동 최강 결정전</p>
+                    </div>
+                    <div class="pull-right">14.05.27</div>
+                    <br>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>우승 AAAAAAA</p>
+                        <p>준우승 BBBBBB</p>
+                        <p>3위 CCCCCCC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" ng-click=" $ctrl.state = 2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <p>논현동 최강 결정전</p>
+                    </div>
+                    <div class="pull-right">14.05.27</div>
+                    <br>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>우승 AAAAAAA</p>
+                        <p>준우승 BBBBBB</p>
+                        <p>3위 CCCCCCC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="$ctrl.state == 2">
+        <div class="col-md-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <p>논현동 최강 결정전</p>
+                    </div>
+                    <div class="pull-right">14.05.27</div>
+                    <br>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>우승 AAAAAAA</p>
+                        <p>준우승 BBBBBB</p>
+                        <p>3위 CCCCCCC</p>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>제목</th>
+                        <th>문의일</th>
+                        <th>처리상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>베팅 결과가 이상합니다.</td>
+                        <td>14.05.05</td>
+                        <td>처리중</td>
+                    </tr>
+                    <tr>
+                        <td>선수 참여 여부</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>답변바랍니다.</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>문의 드려요</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>문의 드려요</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>문의 드려요</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>문의 드려요</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-5">
+            <ul class="list-group">
+                <li class="list-group-item panel-heading">선수랭킹 <span class="badge">12</span></li>
+                <li class="list-group-item"><span class="label label-default">1</span>&nbsp;&nbsp; <span>AAAAA</span> <span class="badge badge-error">5</span></li>
+                <li class="list-group-item"><span class="label label-default">2</span>&nbsp;&nbsp; <span>BBBBB</span> <span class="badge badge-error">3</span></li>
+                <li class="list-group-item"><span class="label label-default">3</span>&nbsp;&nbsp; <span>CCCCCC</span> <span class="badge badge-error">1</span></li>
+                <li class="list-group-item"><span class="label label-default">4</span>&nbsp;&nbsp; <span>DD</span> <span class="badge badge-error">4</span></li>
+                <li class="list-group-item"><span class="label label-default">5</span>&nbsp;&nbsp; <span>EEEE</span> <span class="badge badge-error">6</span></li>
+            </ul>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>제목</th>
+                        <th>문의일</th>
+                        <th>처리상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>베팅 결과가 이상합니다.</td>
+                        <td>14.05.05</td>
+                        <td>처리중</td>
+                    </tr>
+                    <tr>
+                        <td>선수 참여 여부</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>답변바랍니다.</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>문의 드려요</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>문의 드려요</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>문의 드려요</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                    <tr>
+                        <td>문의 드려요</td>
+                        <td>14.05.05</td>
+                        <td>처리완료</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -10,12 +10,18 @@ export class NavbarComponent {
   },{
     title: 'Guidance',
     state: 'guidance'
-  },
-  {
+  },{
     title: '게임소개',
     state: 'introduce'
   }
-  ];
+  ,{
+    title: '기록실',
+    state: 'record'
+  }
+  ,{
+    title: '충전소',
+    state: 'charge'
+  }];
 
   isLoggedIn: Function;
   isAdmin: Function;
