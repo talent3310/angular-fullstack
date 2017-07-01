@@ -5,6 +5,7 @@ export class myInfoComponent {
   /*@ngInject*/
   constructor() {
     this.message = 'World';
+    this.state = 1;
   }
 }
 

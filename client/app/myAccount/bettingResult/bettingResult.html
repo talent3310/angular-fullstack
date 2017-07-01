@@ -1,1 +1,30 @@
-a
+<div class="row">
+    <h4>내 배팅 성적</h4>
+    <div class="panel panel-default">
+        <div class="panel-body text-left">
+            <ul>
+                <li>내 전적(승률) 430전 220승 210패 (51.1%)</li>
+                <li>최고 획득포인트 3만5000</li>
+            </ul>
+        </div>
+    </div>
+    <h4>최근 경기성적</h4>
+    <table st-table="$ctrl.rowCollection" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th st-sort="firstName">날짜</th>
+                    <th st-sort="lastName">방송(게임)</th>
+                    <th st-sort="birthDate">전적</th>
+                    <th st-sort="balance" st-skip-natural="true">D포인트</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="row in $ctrl.rowCollection" ng-click="$ctrl.state = 2">
+                    <td>{{row.firstName | uppercase}}</td>
+                    <td>{{row.lastName}}</td>
+                    <td>{{row.birthDate | date}}</td>
+                    <td>{{row.balance | currency}}</td>
+                </tr>
+            </tbody>
+        </table>
+</div>

@@ -1,1 +1,61 @@
-d
+<div class="row">
+    <h4>내 배팅 성적</h4>
+    <div class="panel panel-default">
+        <div class="panel-body text-left">
+            <div class="pull-left">
+                <ul>
+                    <li>내 전적(승률) 430전 220승 210패 (51.1%)</li>
+                    <li>최고 획득포인트 3만5000</li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <button type="submit" class="btn btn-primary" ng-click="$ctrl.state = 2">포인트 충전하기</button>
+            </div>
+        </div>
+    </div>
+    <h4>최근 경기성적</h4>
+    <div class="btn-group">
+        <label class="btn btn-primary ng-pristine ng-untouched ng-valid active ng-not-empty" ng-model="$ctrl.radioModel" uib-btn-radio="'Left'">&nbsp;&nbsp;충전&nbsp;&nbsp;</label>
+        <label class="btn btn-primary ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="$ctrl.radioModel" uib-btn-radio="'Right'">베팅/배당</label>
+    </div><br><br>
+    <div ng-if="$ctrl.radioModel == 'Left'">
+        <table st-table="$ctrl.rowCollection" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th st-sort="firstName">날짜</th>
+                    <th st-sort="lastName">제휴처</th>
+                    <th st-sort="birthDate">소비만두</th>
+                    <th st-sort="balance" st-skip-natural="true">포인트 - 만두 환급</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="row in $ctrl.rowCollection" ng-click="$ctrl.state = 2">
+                    <td>{{row.firstName | uppercase}}</td>
+                    <td>{{row.lastName}}</td>
+                    <td>{{row.birthDate | date}}</td>
+                    <td>{{row.balance | currency}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div ng-if="$ctrl.radioModel == 'Right'">
+        <table st-table="$ctrl.rowCollection" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th st-sort="firstName">날짜</th>
+                    <th st-sort="lastName">방송(게임)</th>
+                    <th st-sort="birthDate">전적</th>
+                    <th st-sort="balance" st-skip-natural="true">D포인트</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="row in $ctrl.rowCollection" ng-click="$ctrl.state = 2">
+                    <td>{{row.firstName | uppercase}}</td>
+                    <td>{{row.lastName}}</td>
+                    <td>{{row.birthDate | date}}</td>
+                    <td>{{row.balance | currency}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

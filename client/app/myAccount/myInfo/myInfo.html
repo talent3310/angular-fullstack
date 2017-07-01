@@ -1,1 +1,50 @@
-e
+<div class="row">
+    <div>
+        <h4>내 정보 변경</h4>
+    </div>
+    <div ng-if="$ctrl.state == 1">
+        <div class="panel panel-default">
+            <div class="panel-body text-center">
+                <form class="form-inline">
+                    <p>아이디 입력 후, 아이핀 인증하십시오.</p>
+                    <div class="form-group">
+                        <label for="inputPassword4" class="sr-only">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-click="$ctrl.state = 2">아이핀 인증하기</button>
+                </form>
+            </div>
+        </div>
+        <p>아이디를 모르시나요? <a href="#">아이디 찾기</a></p>
+    </div>
+    <div ng-if="$ctrl.state == 2">
+        <div class="panel panel-default">
+            <div class="panel-body text-center">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <p class="form-control-static">신규 비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="form-group mx-sm-3">
+                        <label for="inputPassword2" class="sr-only">Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <br><br>
+                    <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <p class="form-control-static">신규 비밀번호 확인&nbsp;</p>
+                    </div>
+                    <div class="form-group mx-sm-3">
+                        <label for="inputPassword2" class="sr-only">Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div><br><br>
+                    <div>
+                    	<button type="submit" class="btn btn-primary" ng-click="$ctrl.state = 2">확인</button>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
